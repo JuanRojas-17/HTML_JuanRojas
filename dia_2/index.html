@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hoja de Vida</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(to bottom right, #a79f9f, #BDBDBD); /* Fondo degradado */
+            color: #333; /* Color texto */
+            overflow-x: hidden; /* Qita barra desplazamiento */
+        }
+        h1, h2 {
+            text-align: center;
+            color: #333; /* Color titulos */
+        }
+        .section {
+            margin: 20px auto;
+            max-width: 700px;
+            background-color: rgba(239, 225, 225, 0.8); /* Color cuadritos */
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Sombra de los cuadritos */
+            animation: fadeInUp 1s ease; /* Animacion al iniciar la pagina */
+        }
+        .section h2 {
+            border-bottom: 2px solid #333;
+            padding-bottom: 5px;
+            margin-bottom: 20px;
+            color: #333; /* Color titulos */
+        }
+        .info {
+            margin-left: 20px;
+        }
+        .info p {
+            margin-bottom: 10px;
+        }
+        .info p strong {
+            color: #007bff; /* Color de los minititulos */
+        }
+        .profile-img {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .profile-img img {
+            width: 150px; /*  */
+            border-radius: 50%; /* Borde redondo imagen */
+            display: block;
+            margin: 0 auto;
+            margin-bottom: 10px;
+        }
+        .name {
+            text-align: center;
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+        @keyframes fadeInUp {
+            from {
+                opacity: 0; 
+                transform: translateY(20px); 
+            }
+            to {
+                opacity: 1; 
+                transform: translateY(0); 
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Top hoja -->
+    <header>
+        <h1>Hoja de Vida</h1>
+    </header>
+    <!-- info personal -->
+    <section class="section">
+        <h2>Información Personal</h2>
+        <div class="info">
+            <div class="profile-img">
+                <img src="moaengaoegea.PNG" alt="Foto de Juan Camilo Rojas Guerrero">
+            </div>
+            <div class="name">
+                <strong>Juan Camilo Rojas Guerrero</strong>
+            </div>
+            <p><strong>Fecha de Nacimiento:</strong> 17 de Marzo del 2007</p>
+            <p><strong>Dirección:</strong> Calle #33, Bucaramanga, Colombia</p>
+            <p><strong>Teléfono:</strong> 318-388-0152</p>
+            <p><strong>Correo Electrónico:</strong> juan.rojas@gmail.com</p>
+        </div>
+    </section>
+    <!-- educacion -->
+    <section class="section">
+        <h2>Educación</h2>
+        <div class="info">
+            <p><strong>Grado:</strong> Pregrado en Ingeniera de Sistemas</p>
+            <p><strong>Institución:</strong> UNAB</p>
+            <p><strong>Año de Graduación:</strong> 2020</p>
+        </div>
+    </section>
+    <!-- experiencia laboral -->
+    <section class="section">
+        <h2>Experiencia Laboral</h2>
+        <div class="info">
+            <p><strong>Puesto:</strong> Programador</p>
+            <p><strong>Empresa:</strong> Campuslands</p>
+            <p><strong>Periodo:</strong> 2023 - Presente</p>
+            <p><strong>Descripción:</strong> Desarrollo de programas por medio de HTML, CSS, etc.</p>
+        </div>
+    </section>
+    <!-- habilidades -->
+    <section class="section">
+        <h2>Habilidades</h2>
+        <div class="info">
+            <p>HTML5, CSS3, JavaScript, PYTHON, etc.</p>
+        </div>
+    </section>
+    <!-- animaciones -->
+    <div style="text-align: center; margin-top: 30px;">
+        <i class="fas fa-star fa-spin" style="font-size: 50px; color: #7b7575;"></i>
+        <i class="fas fa-heart fa-spin" style="font-size: 50px; color: #7b7575;"></i>
+        <i class="fas fa-bolt fa-spin" style="font-size: 50px; color: #7b7575;"></i>
+    </div>
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</body>
+</html>
